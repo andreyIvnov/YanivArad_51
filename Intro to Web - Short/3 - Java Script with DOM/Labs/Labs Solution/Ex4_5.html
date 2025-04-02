@@ -1,0 +1,71 @@
+<html>
+<script>
+
+let texts = [];
+
+function Add()
+{   
+    var text = document.getElementById("txt").value;
+
+    //Create an option element
+    var obj = document.createElement("option");
+
+    //Set the text to the option
+    obj.innerText = text;
+
+    //Add to the global array
+    texts.push(text);
+
+    //Add the "option" element to the "select" element
+    document.getElementById("sel").appendChild(obj);
+}
+
+
+function CreateTable()
+{   
+    var tblObj = document.getElementById("tbl")
+
+    for(let i=0; i < texts.length; i++)
+    {
+        //Cretae a row  (tr) elemnt
+        var trObj = document.createElement("tr");
+
+        //Cretae a cell  (td) elemnt
+        var tdObj = document.createElement("td");
+        tdObj.innerText = texts[i];
+
+        //Add the td to the tr
+        trObj.appendChild(tdObj);
+
+        //Add the tr to the table
+        tbl.appendChild(trObj);
+
+    }
+
+    //Set the text to the option
+    obj.innerText = text;
+
+    //Add the "option" element to the "select" element
+    document.getElementById("sel").appendChild(obj);
+}
+
+
+</script>
+
+<body>
+    <input type="text" id="txt">
+    <input type="button" value="Add" onclick="Add()"><br/><br/>
+
+    <input type="button" value="Craete Table" onclick="CreateTable()"><br/><br/>
+
+
+    <select id="sel">
+       
+    </select>  <br/>
+
+    <table id="tbl" border="1">
+
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex1_HTML_Solutions</title>
+</head>
+
+<body>
+    <div id="exercise_01">
+        <h2>1. Create the List:</h2>
+        <ul>
+            <li>Dana</li>
+            <ul>
+                <li>20</li>
+                <li>Tel Aviv</li>
+            </ul>
+            <li>Roey</li>
+            <ul>
+                <li>34</li>
+                <li>Haifa</li>
+            </ul>
+            <li>Yogev</li>
+            <ul>
+                <li>32</li>
+                <li>Hulon</li>
+            </ul>
+        </ul>
+    </div>
+    <div id="exercise_02">
+        <h2>2. Create a table (3*4) with data :</h2>
+        <table border="2" style="width:80%; border-collapse: collapse;">
+            <tr>
+                <td>Andrey Ivanov</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+                    <a href="https://www.bmw.co.il/he/All-Models/m-series/m5-sedan/2021/bmw-5-series-sedan-m-automobiles-overview.html">Link to some web site</a>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;" >
+                    <img width="200" height="200" src="../Labs_Solutions/QRGood.png" />
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <ul style="font-weight: bold; line-height: 1.6">
+                        <li>Dana</li>
+                        <li>Ronen</li>
+                        <li>Noam</li>
+                    </ul>
+                </td>
+                <td>
+                    <div>
+                        <table border="1" style="width:100%; border-collapse: collapse; font-size: 20px; margin-top: 10%;">
+                            <tr>
+                                <td>One</td>
+                                <td>Two</td>
+                            </tr>
+                            <tr>
+                                <td>Three</td>
+                                <td>Four</td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="exercise_03">
+        <h2>3. Create the Registration form which will send the data to other Page.</h2>
+        <form>
+            <h3>Registration Form</h3>
+            <div class="nameInput">
+                <label for="fName">First Name :</label>
+                <input id="fName" type="text" value="Avi" id="fName" />
+                <br />
+    
+                <label for="lName">Last Name :</label>
+                <input type="text" value="Levi" id="lName" />
+                <br />
+            </div>
+    
+            <div class="genderInput">
+                Gender:<br />
+                <input type="radio" name="gender" checked />Male<br />
+                <input type="radio" name="gender" />Famele<br />
+            </div>
+    
+            <div class="isAdult">
+                <input type="checkbox" />Adult ?<br />
+            </div>
+    
+            <div class="cityInput">
+                city <select>
+                    <option value="No"></option>
+                    <option value="Haifa">Haifa</option>
+                    <option value="Ashdod">Ashdod</option>
+                    <option value="Jerusalem">Jerusalem</option>
+                </select>
+            </div>
+
+            <br/><br/>
+            
+            <div class="signeInInput">
+                <table border="2" >
+                    <tr>
+                        <td>
+                            <label for="userName">user :</label>
+                            <input type="text" value="AviL" id="userName" />
+                            <br />
+                
+                            <label for="password">password :</label>
+                            <input type="password" value="aa12345" id="password" />
+                            <br />
+                
+                        </td>
+                    </tr>
+                </table><br/>
+            </div>
+
+            <div class="submitInput">
+                <input type="button" value="Send"
+                    onclick="window.alert('Data for '+document.getElementById('fName').value +' was sended to ther page')" />
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

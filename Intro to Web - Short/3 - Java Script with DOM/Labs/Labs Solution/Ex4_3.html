@@ -1,0 +1,38 @@
+<html>
+<script>
+
+
+
+var isRed = false;
+var counter = 0;
+
+function changeColor()
+{
+    var obj = document.getElementById("divColor");
+    if(isRed == true)
+    {
+        obj.style.backgroundColor = "red";
+    }
+    else
+    {
+        obj.style.backgroundColor = "blue";
+    }
+
+    isRed = !isRed;
+    counter++;
+
+    document.getElementById("spanCounter").innerText = counter;
+}
+
+
+
+
+</script>
+
+<body>
+    
+<div onmouseover="changeColor()" id="divColor" style="background-color: red;width: 200px; height: 200px;"></div>
+
+<span id="spanCounter"></span>
+</body>
+</html>

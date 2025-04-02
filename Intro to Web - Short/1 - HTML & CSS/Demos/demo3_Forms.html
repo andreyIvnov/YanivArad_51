@@ -1,0 +1,63 @@
+<html>
+
+
+
+
+
+
+<body>
+
+    <!--
+        
+Forms :
+        - Each field MUST have a name
+        - "action" - the destination of the data
+        - "method" - The data will be sent in one of 2 methods:
+            - "GET" - All the data will be send in the URL
+            - "POST" - All the data will be sent with the request body
+    
+    
+    
+    
+    -->
+    
+    <h3>Log in</h3>
+
+
+    <!--
+        
+Send data with GET - notice that the demo4_GetFromData page has been called with 
+data in it's address (URL) in a form of : demo6_GetFromData?key1=val1&key2=val2
+
+The keys are the inputs names !
+    
+    -->
+
+<form action="demo4_GetFromData.html" method="GET">
+
+    User : <input type="text" name="username"><br/>
+    Pwd : <input type="password"  name="password"><br/>
+
+    <input type="submit" value="Log In">
+
+</form>
+
+
+    <!--
+        
+Send data with POST - notice that the demo4_GetFromData page has been called with OUT 
+data in it's address (URL) 
+    
+    -->
+
+    <form action="demo4_GetFromData.html" method="POST">
+
+        User : <input type="text" name="username"><br/>
+        Pwd : <input type="password"  name="password"><br/>
+    
+        <input type="submit" value="Log In">
+    
+    </form>
+
+</body>
+</html>

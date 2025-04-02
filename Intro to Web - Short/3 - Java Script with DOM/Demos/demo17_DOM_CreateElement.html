@@ -1,0 +1,54 @@
+<html>
+<script>
+
+function addRow()
+{
+  
+   //Add row with 2 columns : "Hello" , "Bye Bye";
+   
+   //Create 2 tds
+   var tdObj1 =  document.createElement("td");
+   var tdObj2 =  document.createElement("td");
+
+   //Add texts to the td's
+   tdObj1.innerText = "Hello";
+   tdObj2.innerText = "Bye Bye";
+
+   //Crete row
+   var trObj =  document.createElement("tr");
+
+   //Add the tds to the row
+   trObj.appendChild(tdObj1);
+   trObj.appendChild(tdObj2);
+
+   var tableObj = document.getElementById("tbl");
+
+      //Add the row to the table
+
+   tableObj.appendChild(trObj);
+
+
+
+
+}
+
+
+</script>
+
+
+
+<body>
+
+
+
+<input type="button" value="Add Row to table" onclick="addRow()">
+
+<table id="tbl" border="1">
+
+</table>
+
+
+</body>
+
+
+</html>

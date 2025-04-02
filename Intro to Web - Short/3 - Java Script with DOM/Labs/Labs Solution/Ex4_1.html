@@ -1,0 +1,29 @@
+<html>
+
+<script> 
+
+function swap()
+{
+   var obj1 = document.getElementById("txt1");
+   var obj2 = document.getElementById("txt2");
+
+   var temp = obj1.value;
+   obj1.value = obj2.value;
+   obj2.value = temp;
+
+   
+}
+
+   </script>
+
+
+<body>
+   
+<input type="button" value="Swap" onclick="swap()">
+
+<input type="text" id="txt1">
+<input type="text" id="txt2">
+
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+
+<script> 
+
+function setImages()
+{
+   var imageObj1 = document.getElementById("img1");
+   var imageObj2 = document.getElementById("img2");
+   var imageObj3 = document.getElementById("img3");
+
+   imageObj1.src = "ball.jpg";
+   imageObj2.src = "flower.jpg";
+   imageObj3.src = "shirt.jpg";
+
+   imageObj1.style.width = imageObj2.style.width = imageObj3.style.width = "50px";
+   imageObj1.style.height = imageObj2.style.height = imageObj3.style.height = "50px";
+
+
+}
+   </script>
+
+
+<body>
+   
+
+<input type="button" value="Set Images" onclick="setImages()">
+
+<table border="1">
+
+   <tr>
+      <td>
+         <img id="img1" />
+      </td>
+   </tr>
+   <tr>
+      <td>
+         <img id="img2" />
+      </td>
+   </tr>
+   <tr>
+      <td>
+         <img id="img3" />
+      </td>
+   </tr>
+
+</table>
+
+
+</body>
+</html>

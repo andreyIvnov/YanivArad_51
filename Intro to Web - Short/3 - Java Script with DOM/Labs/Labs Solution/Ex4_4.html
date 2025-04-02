@@ -1,0 +1,31 @@
+<html>
+<script>
+
+function setColor()
+{
+    var num = document.getElementById("txt").value;
+    document.getElementById("td" + num).style.backgroundColor = "red";
+}
+
+
+</script>
+
+<body>
+
+    <input type="number" min="1" max="4" id="txt">
+    <input type="button" value="Set Color" onclick="setColor()"> <br/>
+    
+<table border="1">
+    <tr>
+        <td id="td1">Hello</td>
+        <td  id="td2">Hello</td>
+    </tr>
+    <tr>
+        <td  id="td3">Hello</td>
+        <td  id="td4">Hello</td>
+    </tr>
+</table>
+
+
+</body>
+</html>

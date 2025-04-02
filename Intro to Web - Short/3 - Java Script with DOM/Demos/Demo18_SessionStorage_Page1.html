@@ -1,0 +1,40 @@
+<html>
+
+<script>
+
+function saveData()
+{
+ //Get the data from the inputs
+ let name = document.getElementById('name').value;
+ let age = document.getElementById('age').value;
+
+ //Save in sessionStorage  in a key-value manner ( we set the keys names as we like  )
+ sessionStorage["name"] = name;
+ sessionStorage["age"] = age;
+
+ //Navigate to other page 
+ document.location.href = "Demo18_SessionStorage_Page2.html"
+
+
+}
+
+</script>
+
+<body>
+    
+<!-- session storage is a special storage in our browser that we use to save data in order to share it
+with other pages
+-->
+
+<!-- -->
+Name : <input type="text" id="name"><br/>
+Age : <input type="number" id="age"><br/>
+
+<input type="button" value="Save Data" onclick="saveData()">
+
+
+
+</body>
+
+
+</html>

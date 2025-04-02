@@ -1,0 +1,32 @@
+<html>
+
+<script>
+
+function loadData()
+{
+ //Get the data from the sessionStorage (stored in the previous page)
+ let name = sessionStorage["name"]
+ let age = sessionStorage["age"]
+
+
+ document.getElementById("name").innerText = name;
+ document.getElementById("age").innerText = age;
+
+
+}
+
+</script>
+
+<body>
+
+Name : <span id="name"></span><br/>
+Age : <span id="age"></span><br/>
+
+<input type="button" value="Load Data" onclick="loadData()">
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exercise_03_css.css">
+
+    <title>Part A – Basic CSS</title>
+    <style>
+        .exercise_02_css h1
+        {
+            background-color: grey
+
+        }
+
+        .halfPageBackground
+        {
+            margin-right: 50%;
+        }
+
+        .redText
+        {
+            color: red
+        }
+
+        .whiteText
+        {
+            color: white
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="exercise_01_css">
+        <h2>1. Create the page (the squares are “div” elements) :</h2>
+        <div style="background-color: grey; height: 250px; width: 230px;">
+            <div style="background-color: green; width: 125px; height: 115px; font-size: 18px;">
+                Have <br/>
+                A <br/>
+                Nice <br/>
+                <div style="background-color: white; display: table">Day</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="exercise_02_css">
+        <h2>2. Create a page with 3 h1 Tags</h2>
+        - The two of them are with the width of the page and the third one is the width of
+            half of the page. <br/>
+        - The second tag is with white color, whereas all the other are in red.
+        <h1 class="redText">Hello</h1>
+        <h1 class="whiteText">Good Bye</h1>
+        <h1 class="redText halfPageBackground">Thank You</h1>
+    </div>
+
+    <div class="exercise_03_css">
+        <h2>3. You build a web site. </h2>
+        The font in all the tables should be at BIG size and in red color.
+        Create 2 pages. Each page will have a table (2*2) with some text.
+        The second page page will also have a textbox. This textbox should ALWAYS have the
+        same background color as the table in the same page (Use classes)
+        <br/><br/>
+        <a href="../Labs_Solutions/exercise_03_css_page_1.html">Page 1>></a>
+        <br/>
+        <a href="../Labs_Solutions/exercise_03_css_page_2.html">Page 2>></a>
+    </div>
+
+    <div class="exercise_04_css">
+        <h2>4. Create a table with 1 column a 3 rows. All Rows have the same images with the same height but with different width.</h2>
+        <h3>Make the second row disappeared (with OUT deleting it)</h3>
+        <table border="2">
+            <tr>
+                <td><img class="firstRowWidth"/></td>
+            </tr>
+            <tr class="undispayedRow">
+                <td><img class="secendRowWidth"/></td>
+            </tr>
+            <tr>
+                <td><img class="thirdRowWidth"/></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

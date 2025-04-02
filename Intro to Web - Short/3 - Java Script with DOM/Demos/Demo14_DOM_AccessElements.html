@@ -1,0 +1,59 @@
+<html>
+
+<head>
+
+<script>
+ 
+ var counter=0
+
+function copyText()
+{
+    var obj1 = document.getElementById('txt1')
+    var obj2 = document.getElementById('txt2')
+    //Copy the value from txt1 to txt2
+    obj2.value = obj1.value;
+}
+
+function changeText()
+{
+    var obj = document.getElementById('hText')
+    obj.innerText = "Changed !"
+}
+
+function count()
+{
+    counter++;
+    var obj = document.getElementById('divCount')
+    obj.innerText = counter;
+}
+
+</script>
+
+</head>
+
+<body>
+
+<!-- Access text data (value) -->
+<input type="text" id="txt1"><br/>
+<input type="text" id="txt2"><br/>
+<input type="button" value="Copy Text" onclick="copyText()"><br/>
+
+
+<!-- Access Output element (h3) -->
+<h3 id="hText">Hello</h3>
+<input type="button" value="Change Text" onclick="changeText()"><br/>
+
+
+<!-- Access Output element (div) based on global variable -->
+<div onmouseover="count()" style="background-color: red; width: 100px;height: 100px;">
+    Move the mouse over here and then out the region
+</div>
+
+<div id="divCount">
+
+</div>
+
+</body>
+
+
+</html>

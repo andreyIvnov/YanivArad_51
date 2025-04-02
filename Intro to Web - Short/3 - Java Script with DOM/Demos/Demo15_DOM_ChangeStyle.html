@@ -1,0 +1,64 @@
+<html>
+
+<head>
+
+<script>
+ 
+ var isRed=true;
+
+function changeColor()
+{
+    var obj = document.getElementById('hText');
+    isRed = !isRed;
+
+    if(isRed)
+    {
+        obj.style.color = "red"
+    }
+    else
+    {
+        obj.style.color = "blue"
+    }
+}
+
+function showDiv()
+{
+    var obj = document.getElementById('greenDiv')
+    obj.style.visibility = 'visible'
+}
+
+function hideDiv()
+{
+    var obj = document.getElementById('greenDiv')
+    obj.style.visibility = 'hidden'
+}
+
+
+</script>
+
+</head>
+
+<body>
+
+<!--  change color of the text in the h1 element -->
+<input type="button" value="change color" onclick="changeColor()">
+<h1 id="hText">Hello worlld</h1>
+
+<!--  change the green div visibility -->
+<input type="button" value="Show" onclick="showDiv()">
+<input type="button" value="Hide" onclick="hideDiv()">
+
+
+<div style="background-color: red;width: 50px;height: 50px;;"></div>
+<div id="greenDiv" style="visibility: visible ; background-color: green;width: 50px;height: 50px;;"></div>
+<div style="background-color: blue;width: 50px;height: 50px;;"></div>
+
+
+
+
+
+
+</body>
+
+
+</html>

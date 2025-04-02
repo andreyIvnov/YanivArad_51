@@ -1,0 +1,43 @@
+<html>
+<script>
+
+function showOrHide(toShow)
+{
+    var obj = document.getElementById("divAdult");
+
+    //Option 1
+    /*
+    if(toShow == true)
+    {
+        obj.style.display = "block";
+    }
+    else
+    {
+        obj.style.display = "none";
+    }
+    */
+
+    //Option 2
+    obj.style.display = toShow ? "block" : "none"
+}
+
+</script>
+
+<body>
+    
+
+Name : <input type="text" ><br/>
+Adult : <br/>
+Yes : <input type="radio" name="adult" onclick="showOrHide(true)"><br/>
+No : <input type="radio" name="adult" onclick="showOrHide(false)"><br/>
+
+<div id="divAdult">
+ID : <input type="text" ><br/>
+Credit Card : <input type="text" ><br/>
+</div>
+
+<input type="button" value="Save">
+
+
+</body>
+</html>

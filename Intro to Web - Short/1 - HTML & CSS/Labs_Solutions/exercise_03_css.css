@@ -1,0 +1,41 @@
+.sameFontStile
+{
+    font-size: 25px;
+    color: red;
+}
+
+.sameBackground
+{
+    background-color: pink;
+}
+
+tr
+{
+    display: block;
+}
+
+img
+{
+    content:url("../Labs_Solutions/QRGood.png");
+    height: 100px;
+}
+
+.firstRowWidth
+{
+    width: 100px;
+}
+
+.secendRowWidth
+{
+    width: 80px;
+}
+
+.thirdRowWidth
+{
+    width: 50px;
+}
+
+.undispayedRow
+{
+    display: none;
+}

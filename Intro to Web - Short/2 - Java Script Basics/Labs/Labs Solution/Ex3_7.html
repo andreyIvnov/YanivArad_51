@@ -1,0 +1,29 @@
+<html>
+    <script>
+
+
+function FindGrades(arr, grade)
+{
+    for(let i=0; i < arr.length; i++)
+    {
+       let grades = arr[i].grades;
+
+       for(let j=0; j < grades.length; j++)
+       {
+           if(grades[j] > grade)
+           {
+               console.log(grades[j])
+           }
+       }
+    }
+}
+
+    let students =[ {id : 1, name : "Dana", grades : [90,66,100,74]},
+                    {id : 2, name : "Avi", grades : [88,91]}]; 
+
+      
+    FindGrades(students, 85);
+
+
+    </script>
+</html>

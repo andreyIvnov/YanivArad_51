@@ -1,0 +1,49 @@
+<html>
+
+<head>
+
+<script>
+//JSON - Java Script Object Notation
+// Stored data of pairs on key and value
+
+var obj = { 'name' : 'Avi' , 'age' : 23}
+
+//Get the data by the key
+console.log(obj['age']) // print 23
+
+
+var student = { 'name' : 'Ron',
+                'age' : 45,
+                'address' : 
+                    {
+                        'city' : 'Haifa',
+                        'street' : 'Herzel'
+                    },
+                'grades' : [90,88,100]
+                }
+
+console.log(student['address']['city']) // print Haifa
+
+console.log(student['grades'][1]) // 88
+
+// We can start with empty JSON
+var obj = {}
+
+//Add key and value
+obj.name = "Dana"
+obj.age = 43
+
+console.log(obj) // print {name : 'Dana' , age : 43}
+
+</script>
+
+</head>
+
+<body>
+
+
+
+</body>
+
+
+</html>

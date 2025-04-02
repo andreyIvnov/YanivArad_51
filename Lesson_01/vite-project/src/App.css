@@ -1,0 +1,27 @@
+#root {
+  max-width: 1280px;
+  margin:  auto;
+  padding: 2rem;
+  text-align: left;
+}
+
+
+.redColor {
+  color: red;
+}
+
+.blueColor {
+  color: blue;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+td{
+  width: 100px;
+}
+
+.boldedText{
+  font-weight: bold;
+}

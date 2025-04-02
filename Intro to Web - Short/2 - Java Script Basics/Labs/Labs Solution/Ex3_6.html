@@ -1,0 +1,61 @@
+<html>
+    <script>
+
+
+function FindByFax(arr,fax)
+{
+    for(let i=0; i < arr.length; i++)
+    {
+        if(arr[i].address.phones.fax == fax)
+        {
+            console.log("Name : " + arr[i].name);
+            console.log("City : " + arr[i].address.city);
+        }
+    }
+}
+
+
+
+      let obj1 = {
+                    name : "Avi Cohen",
+                    age : 30,
+                    address : 
+                    {
+                        street : "Herzel",
+                        num : 23,
+                        city : "Tel Aviv",
+                        phones : 
+                        {
+                            mobile : "054-111",
+                            fax : "03-2222",
+                            home : "02-2222"
+                        }
+                    }
+                }
+
+       
+
+    let obj2 = {
+            name : "Dana Levy",
+            age : 25,
+            address : 
+            {
+                street : "Begin",
+                num : 31,
+                city : "Herzelya",
+                phones : 
+                {
+                    mobile : "050-666",
+                    fax : "04-2222",
+                    home : "02-2222"
+                }
+            }
+        }
+
+
+        let arr = [obj1,obj2];
+        FindByFax(arr,"04-2222")
+
+
+    </script>
+</html>

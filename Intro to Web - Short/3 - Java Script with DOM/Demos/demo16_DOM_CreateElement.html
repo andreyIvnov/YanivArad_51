@@ -1,0 +1,38 @@
+<html>
+<script>
+
+function createDiv()
+{
+   //Create a HTML tag in memory
+   var hObj = document.createElement("h3");
+   hObj.innerText = "Hello from new Header";
+
+   var divObj = document.getElementById("div1");
+
+   divObj.appendChild(hObj);
+
+
+}
+
+
+</script>
+
+
+
+<body>
+
+
+
+<input type="button" value="Create Div !" onclick="createDiv()">
+
+<div id="div1">
+
+
+
+</div>
+
+
+</body>
+
+
+</html>
